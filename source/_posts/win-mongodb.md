@@ -17,9 +17,9 @@ description: "win10下安装配置mongodb"
 ### 配置Mongodb
 
  1. 在c:\MongoDB（可随意起）下面建一个data文件夹 c:\MongoDB\data
-    
+   
  2. 在c:\MongoDB（可随意起）下面建一个logs文件夹 c:\MongoDB\logs ，在里面建一个文件mongo.log
-    
+   
  3. 在c:\MongoDB（可随意起）下面建一个etc(随意起，放配置文件)文件夹 c:\MongoDB\etc ,在里面建一个文件mongo.conf
 
 打开mongo.conf文件，修改如下：
@@ -58,4 +58,4 @@ port=27017
 ## 最后
 
 创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](https://i.imgur.com/qbcaSEh.png)
+![](https://ws1.sinaimg.cn/large/006tNc79gy1g2qi8r9stqj30a50dwdkq.jpg)

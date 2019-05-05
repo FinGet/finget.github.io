@@ -1110,6 +1110,7 @@ router.beforeResolve((to, from, next) => {
 
     - `next(error)`: (2.4.0+) 如果传入 `next` 的参数是一个 `Error` 实例，则导航会被终止且该错误会被传递给 `router.onError()` 注册过的回调。
     
+
 **确保要调用 `next` 方法，否则钩子就不会被 `resolved`。**    
 
 ##### 路由对象
@@ -1620,4 +1621,4 @@ const store = new Vuex.Store({
 ## 最后
 
 创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](https://i.imgur.com/qbcaSEh.png)
+![](https://ws1.sinaimg.cn/large/006tNc79gy1g2qi8r9stqj30a50dwdkq.jpg)

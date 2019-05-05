@@ -511,7 +511,7 @@ function create() {
     return typeof result === 'object' ? result : obj
 }
 ```
- 
+
 ### 原型继承与类继承
 
 [JS原型继承和类式继承http://www.cnblogs.com/constantince/p/4754992.html](http://www.cnblogs.com/constantince/p/4754992.html)
@@ -1432,7 +1432,6 @@ get()
 
 [https://blog.csdn.net/Garrettzxd/article/details/82390653](https://blog.csdn.net/Garrettzxd/article/details/82390653)
 
-
 ----------
 
 ## Vue
@@ -1811,4 +1810,4 @@ this.setState((prevState, props) => {
 ## 最后
 
 创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](https://i.imgur.com/qbcaSEh.png)
+![](https://ws1.sinaimg.cn/large/006tNc79gy1g2qi8r9stqj30a50dwdkq.jpg)

@@ -10,6 +10,7 @@ description: "通过JavaScript的预编译过程，充分理解变量提升"
 
 
 >JavaScript在运行时，要经历三步
+>
 >1. 语法分析 2.预编译 3.解析执行(自上而下)
 
 ## JavaScript预编译
@@ -309,4 +310,4 @@ function fn(){
 ## 最后
 
 创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](https://i.imgur.com/qbcaSEh.png)
+![](https://ws1.sinaimg.cn/large/006tNc79gy1g2qi8r9stqj30a50dwdkq.jpg)

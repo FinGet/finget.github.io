@@ -59,7 +59,7 @@ UDP（user datagram protocol–用户数据报协议，与TCP特性恰恰相反�
 
 7. 应用层：
 是最靠近用户的OSI层。这一层为用户的应用程序（例如电子邮件、文件传输和终端仿真）提供网络服务。
-   
+  
 ## HTTP 发展历史
 
 ### HTTP/0.9
@@ -456,4 +456,4 @@ HTTPS和HTTP的区别主要为以下四点：
 ## 最后
 
 创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](https://i.imgur.com/qbcaSEh.png)
+![](https://ws1.sinaimg.cn/large/006tNc79gy1g2qi8r9stqj30a50dwdkq.jpg)
