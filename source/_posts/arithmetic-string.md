@@ -9,6 +9,99 @@ categories: "JS"
 description: "以leetcode原题学习数据结构和算法"
 ---
 
+## 反转整数
+
+```
+给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
+
+示例 1:
+
+输入: 123
+输出: 321
+ 示例 2:
+
+输入: -123
+输出: -321
+示例 3:
+
+输入: 120
+输出: 21
+注意:
+
+假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为 [−231,  231 − 1]。请根据这个假设，如果反转后整数溢出那么就返回 0。
+```
+
+思路：数字变字符串再变数组，这个主要就是运用的数组的常用api了，`pop`、`shift`、 `unshift`、`join`。
+
+```javascript
+/**
+ * @param {number} x
+ * @return {number}
+ */
+var reverse = function(x) {
+    let arr = (x + '').split('').reverse()
+        let len = arr.length
+        // 最大最小边界
+        let min = -(2**31)
+        let max = (2**31) - 1
+        if (arr[len - 1] == '-') {
+            arr.pop()
+            if (arr[0] == 0) {   
+                arr.shift()
+                arr.unshift('-')
+                let res = Number(arr.join(''))
+                return res>=min&&res<=max?res:0
+            } else {
+                arr.unshift('-')
+                let res = Number(arr.join(''))
+                return res>=min&&res<=max?res:0
+            }
+
+        } else if (arr[0] == '0' && arr[len - 1] != '-') {
+            arr.shift()
+            let res = Number(arr.join(''))
+            return res>min&&res<max?res:0
+        } else {
+            return Number(arr.join(''))>min&&Number(arr.join(''))<max?Number(arr.join('')):0
+        }
+};
+```
+
+
+
+## 字符串中的第一个唯一字符
+
+```
+给定一个字符串，找到它的第一个不重复的字符，并返回它的索引。如果不存在，则返回 -1。
+
+案例:
+
+s = "leetcode"
+返回 0.
+
+s = "loveleetcode",
+返回 2.
+ 
+
+注意事项：您可以假定该字符串只包含小写字母。
+```
+
+思路：`for of`循环，找出字符出现的第一个位置和最后一个位置，如果两个值相等，则返回
+
+```javascript
+/**
+ * @param {string} s
+ * @return {number}
+ */
+var firstUniqChar = function(s) {
+    for (let v of s) {
+        if (s.indexOf(v) === s.lastIndexOf(v)) return s.indexOf(v)
+    }
+    return -1
+};
+```
+
+
 ## 反转字符串中的单词
 
 ```
