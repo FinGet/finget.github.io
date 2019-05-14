@@ -15,4 +15,4 @@ description: "一张图展示一段js代码的一生，变量对象、作用域�
 ## 最后
 
 创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](https://ws1.sinaimg.cn/large/006tNc79gy1g2qi8r9stqj30a50dwdkq.jpg)
+![](<https://image-static.segmentfault.com/207/665/2076650181-5bfe3d1a48e89_articlex>)
