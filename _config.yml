@@ -11,7 +11,7 @@ language: zh-Hans
 timezone:
 
 # 侧边栏头像设置
-avatar: https://ws4.sinaimg.cn/large/006tNc79gy1g2qixhsxxdj30hs0hs74v.jpg
+avatar: https://avatar-static.segmentfault.com/277/531/2775313407-59bb5bf06e6b6_huge256
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
