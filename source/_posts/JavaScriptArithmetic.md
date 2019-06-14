@@ -5,7 +5,7 @@ type: "tags"
 tags:
 	- JS
 	- 算法
-categories: "JS"
+categories: "算法"
 description: "JavaScript常用排序算法"
 ---
 

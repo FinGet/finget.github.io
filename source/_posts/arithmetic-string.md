@@ -5,7 +5,7 @@ type: "tags"
 tags: 
 	- JS
 	- 算法
-categories: "JS"
+categories: "算法"
 description: "以leetcode原题学习数据结构和算法"
 ---
 
@@ -230,7 +230,46 @@ var isAnagram = function(s, t) {
     return true
 };
 ```
+## 验证回文字符串
 
+```
+ 验证回文字符串
+给定一个字符串，验证它是否是回文串，只考虑字母和数字字符，可以忽略字母的大小写。
+
+说明：本题中，我们将空字符串定义为有效的回文串。
+
+示例 1:
+
+输入: "A man, a plan, a canal: Panama"
+输出: true
+示例 2:
+
+输入: "race a car"
+输出: false
+```
+
+思路：回文串就是正反读都是一样的，例如`101`。根据题意，我们需要把字符串中除了数字和字母外的字符都清除，而且需要转成小写，或者大写。接着用双指针的方法，从第一个和最后一个开始，往中间比较，如果不相等就返回`false`。
+
+```javascript
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+var isPalindrome = function(s) {
+    let arr = s.replace(/[^A-Za-z0-9]+/ig,'').toLocaleLowerCase().split('')
+    if (arr.length == 0){
+        return true
+    }
+    let j = arr.length - 1
+    for(let i = 0;i<=j;i++) {
+        if (arr[i]!=arr[j]) {
+            return false
+        }
+        j -- 
+    }
+    return true
+};
+```
 ## 最后
 
 创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
