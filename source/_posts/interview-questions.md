@@ -133,7 +133,7 @@ filename - 定义文档/资源的名称
 
 > 客服端和服务端在进行http请求和返回的工程中，需要创建一个TCP connection（由客户端发起）,http不存在连接这个概念，它只有请求和响应。请求和响应都是数据包，它们之间的传输通道就是TCP connection。
 
-![](https://i.imgur.com/sPsrDR1.png)
+![](https://ask.qcloudimg.com/draft/5687933/qbre2nqvmm.png?imageView2/2/w/1620)
 
 位码即tcp标志位，有6种标示：SYN(synchronous建立联机) ACK(acknowledgement 确认) PSH(push传送) FIN(finish结束) RST(reset重置) URG(urgent紧急)Sequence number(顺序号码) Acknowledge number(确认号码)
 
@@ -176,10 +176,10 @@ A等待2MSL,保证B收到了消息,否则重说一次”我知道了”,A->CLOSE
 在实现websocket连线过程中，需要通过浏览器发出websocket连线请求，然后服务器发出回应，这个过程通常称为“握手” (handshaking)。
 
 客户端请求web socket连接时，会向服务器端发送握手请求
-![](https://i.imgur.com/zg78OfZ.png)
+![](https://ask.qcloudimg.com/draft/5687933/xphigllg1c.png?imageView2/2/w/1620)
 
 请求头大致内容:
-![](https://i.imgur.com/NynFLnS.png)
+![](https://ask.qcloudimg.com/draft/5687933/6avznts1rc.png?imageView2/2/w/1620)
 
 > 请求包说明： 
 * 必须是有效的http request 格式； 
@@ -194,7 +194,7 @@ A等待2MSL,保证B收到了消息,否则重说一次”我知道了”,A->CLOSE
 * 可能包括任意其他域，如cookie.
 
 服务端响应如下:
-![](https://i.imgur.com/NTswA2X.png)
+![](https://ask.qcloudimg.com/draft/5687933/gnjybtqn82.png?imageView2/2/w/1620)
 
 > 应答包说明： 
 *必须包括Upgrade头域，并且其值为”websocket”; 
@@ -414,7 +414,7 @@ setTimeout(function() {
 
 - 其中每一个任务的执行，无论是macro-task还是micro-task，都是借助函数调用栈来完成。
 
-![](https://i.imgur.com/otax4mX.png)
+![](https://ask.qcloudimg.com/draft/5687933/yuisvk7lhb.png?imageView2/2/w/1620)
 
 ### promise里面和then里面执行有什么区别
 
@@ -1381,7 +1381,7 @@ var _protocol = (("https:" == document.location.protocol) ? " https://" : " http
 
 ### JS执行过程中分为哪些阶段
 
-![](https://i.imgur.com/9LkJ8hC.png)
+![](https://ask.qcloudimg.com/draft/5687933/vdz708cqn6.png?imageView2/2/w/1620)
 
 ### 数组里面有10万个数据，取第一个元素和第10万个元素的时间相差多少
 
@@ -1466,7 +1466,7 @@ Vue2.x用的是基于ES5的getter/setter,也就是Object.defineProperty这个API
 
 ### 讲vue-lazyloader的原理，手写伪代码
 
-![](https://i.imgur.com/j9hH9vr.png)
+![](https://ask.qcloudimg.com/draft/5687933/o6wn0ld131.png?imageView2/2/w/1620)
 
 原理简述：
 1. vue-lazyload是通过指令的方式实现的，定义的指令是v-lazy指令

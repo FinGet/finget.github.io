@@ -10,7 +10,7 @@ description: "Vue Vue-router Vuex"
 
 ## Vue 实例上的属性
 
-![Vue实例](https://i.imgur.com/Y3Fn5lV.png)
+![Vue实例](https://ask.qcloudimg.com/draft/5687933/cd6ur3cqkn.png?imageView2/2/w/1620)
 
 ### 组件树
 
@@ -64,7 +64,7 @@ export default {
 </script>
 ```
 可以看到text值的变化是0 5 10 15 ... 而并没有出现 0 1 2 3 ... 这样连续的变化
-![](https://i.imgur.com/R4QBBKU.gif)
+![](https://ask.qcloudimg.com/draft/5687933/hhiw35e2ts.gif)
 
 
 ### event方法的使用
@@ -948,7 +948,7 @@ const router = new VueRouter({
 上面这两个路由有一部分`/login`是相同的，在点击了`login exact`路由调转到`/login/exact`后：
 
 `/login` 上还保留了`router-link-active`类名
-![](https://i.imgur.com/GMEcJ19.png)
+![](https://ask.qcloudimg.com/draft/5687933/lczo6uj8vg.png?imageView2/2/w/1620)
 
 #### scrollBehavior
 

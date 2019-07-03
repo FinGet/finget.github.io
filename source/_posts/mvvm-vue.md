@@ -97,13 +97,13 @@ description: "JavaScript从初级往高级走系列，一次学习记录吧，�
 
 - MVC （Model View Controller）
 
-  ![](https://i.imgur.com/VBt5082.png )
+  ![](https://ask.qcloudimg.com/draft/5687933/ukr3p9h879.png?imageView2/2/w/1620 )
 
-  ![](https://i.imgur.com/I8pCHF8.png )
+  ![](https://ask.qcloudimg.com/draft/5687933/wee738ursf.png?imageView2/2/w/1620)
 
 - MVVM （Model View ViewModel）
 
-![](https://i.imgur.com/nbERAJ8.png) 
+![](https://ask.qcloudimg.com/draft/5687933/k37f46scc7.png?imageView2/2/w/1620) 
 
 > View 通过 `事件绑定` (DOM Listeners) 操作Model; Model通过 `数据绑定` (Data Bindings)操作View。
 
@@ -266,7 +266,7 @@ function render() {
 
 
 
-![](https://i.imgur.com/anzI5vL.png)
+![](https://ask.qcloudimg.com/draft/5687933/wtmke1yp41.png?imageView2/2/w/1620)
 
 
 
@@ -274,7 +274,7 @@ function render() {
 
 在vue源码里`alert`  `render` 函数
 
-![](https://i.imgur.com/uBpSBab.png) 
+![](https://ask.qcloudimg.com/draft/5687933/wqqri98547.png?imageView2/2/w/1620) 
 
 以上面vue实现的todolist为例：
 
@@ -341,12 +341,12 @@ with(this){  // this 就是 vm
 
 [可以先看一下virtualDom](https://finget.github.io/2018/05/22/virtualDom/)
 
-![](https://i.imgur.com/8ZlZdZn.png) 
+![](https://ask.qcloudimg.com/draft/5687933/0rtc4nu8uf.png?imageView2/2/w/1620) 
 
 - vm._c 其实相当于 snabbdom 中的 h 函数
 - render 函数执行之后，返回的是 vnode
 
-![](https://i.imgur.com/2C0Lz42.png) 
+![](https://ask.qcloudimg.com/draft/5687933/davw3p1619.png?imageView2/2/w/1620) 
 
 - updateComponent 中实现了 vdom 的 patch
 - 页面首次渲染 执行updateComponent
@@ -361,19 +361,19 @@ with(this){  // this 就是 vm
     - 模板中的v-model v-if v-on 都变成了 js逻辑
     - render 函数返回 vnode
 
-![](https://i.imgur.com/vXDR2CX.png)
-![](https://i.imgur.com/IM7NA6B.png)
+![](https://ask.qcloudimg.com/draft/5687933/4xomyjqkas.png?imageView2/2/w/1620)
+![](https://ask.qcloudimg.com/draft/5687933/qds5yp1ln1.png?imageView2/2/w/1620)
 
 - 第二部： 响应式开始监听
     - Object.defineProperty
     - 将 data 的属性代理到 vm 上
     
 
-![](https://i.imgur.com/gA2rWmu.png)
+![](https://ask.qcloudimg.com/draft/5687933/6i6oxdrc1v.png?imageView2/2/w/1620)
 
 - 第三步： 首次渲染，显示页面，且绑定依赖
 
-![](https://i.imgur.com/1b0LjjK.png)
+![](https://ask.qcloudimg.com/draft/5687933/e7fqueqc7u.png?imageView2/2/w/1620)
 
 - 第四步： data 属性变化，触发 rerender
 

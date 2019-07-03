@@ -13,11 +13,11 @@ description: "学习设计模式笔记————JavaScript设计模式之适�
 
 > 适配器模式(Adapter)是将一个类(对象)的接口(方法或属性)转换成客户希望的另外一个接口(方法或属性),适配器模式使得原本由于接口不兼容而不能一起工作的那些类(对象)可以一起工作。[旧接口格式和使用者不兼容，中间加一个适配器转换接口。]
 
-![](https://i.imgur.com/6gHYqna.png)
-![](https://i.imgur.com/cWifkCQ.png)
+![](https://ask.qcloudimg.com/draft/5687933/ocek3dt0va.png?imageView2/2/w/1620)
+![](https://ask.qcloudimg.com/draft/5687933/ooq4my8atm.png?imageView2/2/w/1620)
 
 UML
-![](https://i.imgur.com/FLUn9OL.png)
+![](https://ask.qcloudimg.com/draft/5687933/1zzboxeifl.png?imageView2/2/w/1620)
 
 模式作用： 
 - 使用一个已经存在的对象，但其方法或接口不符合你的要求。
@@ -54,7 +54,7 @@ renderMap(baiduMap);//输出:开始渲染百度地图
 
 适配器模式还有数据的适配，在现在开发中，各种UI框架层出不穷(elementUI),每个框架中对组件数据格式的定义不一样，后台返回的数据也不能完全按照框架的格式，这时作为前端程序猿，我们就需要把后台返回的数据做一次修改，以适应框架。这就是设配器的想法，不要听到设计模式就很恼火，说不定你每天都在用！！！
 
-![](https://i.imgur.com/7j1VIsF.png)
+![](https://ask.qcloudimg.com/draft/5687933/ikppgi4s14.png?imageView2/2/w/1620)
 
 ## 最后
 

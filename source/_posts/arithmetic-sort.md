@@ -328,3 +328,91 @@ var sortArrayByParityII = function(A) {
     return A;
 };
 ```
+
+## 缺失的第一个正数
+
+```
+给定一个未排序的整数数组，找出其中没有出现的最小的正整数。
+
+示例 1:
+
+输入: [1,2,0]
+输出: 3
+示例 2:
+
+输入: [3,4,-1,1]
+输出: 2
+示例 3:
+
+输入: [7,8,9,11,12]
+输出: 1
+说明:
+
+你的算法的时间复杂度应为O(n)，并且只能使用常数级别的空间。
+```
+
+```javascript
+// 第一种解法
+function firstMissingPositive(arr) {
+    // 过滤到非正数
+    arr = arr.filter(item => item > 0);
+
+    if(arr.length ==0) {
+        // 数组为空说明没有正数，那最小的正数就是1
+        return 1;
+    } else {
+        // 排序
+        arr.sort((a,b) => a-b);
+        // 如果第一项不是1，那就返回1
+        if(arr[0] !== 1) {
+            return 1
+        } else {
+            for (let i = 0,len = arr.length; i < len; i++) {
+                if(arr[i+1] - arr[i] > 1) {
+                    return arr[i] + 1
+                } 
+            }
+            // 如果上面没有return，那就返回数组最后一项 + 1
+            return arr.pop() + 1
+        }
+    }
+};
+```
+
+```javascript
+// 利用选择排序优化代码性能,上面那种写法，最大的缺点就是对所有数据都进行了排序
+function firstMissingPositive(arr) {
+	arr = arr.filter(item => item > 0);
+
+	// 选择排序，先拿到最小值，如果第一个元素不是1就返回1
+	let min = 0;
+	let len = arr.length;
+	for (let i = 0; i < len; i++) {
+		min = i;
+		for (let j = i+1; j < len; j++) {
+            if (arr[min] > arr[j]) {
+                min = j
+            }
+        }
+        [arr[i], arr[min]] = [arr[min], arr[i]]
+        // 当进行到第二次遍历后，就可以比较了
+        if (i>0) {
+        	if(arr[i]-arr[i-1]>1) {
+        		return arr[i-1] + 1
+        	}
+        } else {
+            // 如果第一项最小正数不是1，就返回1 
+        	if (arr[0]!==1){
+        		return 1;
+        	}
+        }
+	}
+	// 上面的情况都没通过，这也是最坏的情况，就判断数组的长度如果为0就返回1，反之返回数组最后一项+1
+	return arr.length?arr.pop() + 1:1
+}
+```
+
+## 最后
+
+创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
+![](https://image-static.segmentfault.com/207/665/2076650181-5bfe3d1a48e89)

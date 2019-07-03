@@ -152,7 +152,7 @@ links_title: 推荐阅读
 links_layout: block
 # links_layout: inline
 links:
-  从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理: https://funteas.com/topic/5a64e9482630e6f31583701d
+  从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理: http://www.dailichun.com/2018/01/21/js_singlethread_eventloop.html
   前端进阶系列: https://yangbo5207.github.io/wutongluo/ji-chu-jin-jie-xi-lie.html
   八段代码彻底掌握 Promise: https://juejin.im/post/597724c26fb9a06bb75260e8
   通俗大白话来理解TCP协议的三次握手和四次分手: https://segmentfault.com/a/1190000009183220

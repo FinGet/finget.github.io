@@ -9,16 +9,16 @@ description: "有关于网络协议、HTTP报文、跨域请求等http的基础�
 ---
 
 ## 浏览器输入URL后HTTP请求返回过程
-![](https://i.imgur.com/l009YU4.png)
+![](https://ask.qcloudimg.com/draft/5687933/9287idp5mg.png?imageView2/2/w/1620)
 
 ## 网络协议分层
 
 ### OSI七层协议
-![](https://i.imgur.com/Ft5xzr5.gif)
+![](https://ask.qcloudimg.com/draft/5687933/5nlx45l0md.gif)
 ### 五层协议
 五层协议只是OSI和TCP/IP的综合，实际应用还是TCP/IP的四层结构。
 
-![](https://i.imgur.com/FQ3DXON.png)
+![](https://ask.qcloudimg.com/draft/5687933/tsjhx2eu8r.png?imageView2/2/w/1620)
 
 ### TCP/IP 协议
 
@@ -26,16 +26,16 @@ description: "有关于网络协议、HTTP报文、跨域请求等http的基础�
 
 TCP/IP协议将应用层、表示层、会话层合并为应用层，物理层和数据链路层合并为网络接口层
 
-![](https://i.imgur.com/Ou1tVS9.png)
+![](https://ask.qcloudimg.com/draft/5687933/dr311fz8yh.png?imageView2/2/w/1620)
 
 ### 三种模型结构
 
-![](https://i.imgur.com/3kS1Oq0.png)
+![](https://ask.qcloudimg.com/draft/5687933/p6yhl94gtk.png?imageView2/2/w/1620)
 
 ![](https://i.imgur.com/bsWKhAp.png)
 
 ### 各层的作用
-![](https://i.imgur.com/OMCoUox.png)
+![](https://ask.qcloudimg.com/draft/5687933/gpf6yf2r53.png?imageView2/2/w/1620)
 
 1. 物理层：
 主要定义物理设备标准，如网线的接口类型、光纤的接口类型、各种传输介质的传输速率等。它的主要作用是传输比特流（就是由1、0转化为电流强弱来进行传输,到达目的地后在转化为1、0，也就是我们常说的数模转换与模数转换）。这一层的数据叫做比特。 　　
@@ -92,7 +92,7 @@ UDP（user datagram protocol–用户数据报协议，与TCP特性恰恰相反�
 
 > 客服端和服务端在进行http请求和返回的工程中，需要创建一个`TCP  connection`（由客户端发起）,http不存在连接这个概念，它只有请求和响应。请求和响应都是数据包，它们之间的传输通道就是`TCP connection`。
 
-![](https://i.imgur.com/sPsrDR1.png)
+![](https://ask.qcloudimg.com/draft/5687933/8fl80pwgrj.png?imageView2/2/w/1620)
 
 位码即tcp标志位，有6种标示：SYN(synchronous建立联机) ACK(acknowledgement 确认) PSH(push传送) FIN(finish结束) RST(reset重置) URG(urgent紧急)Sequence number(顺序号码) Acknowledge number(确认号码)
 
@@ -144,10 +144,10 @@ bitpoetry.io/posts/hello.html#intro
 ## HTTP报文
 
 请求报文：
-![](https://i.imgur.com/AVQ3UcM.jpg)
+![](https://ask.qcloudimg.com/draft/5687933/y9ffal341p.jpg?imageView2/2/w/1620)
 
 响应报文：
-![](https://i.imgur.com/o0vnSMW.jpg)
+![](https://ask.qcloudimg.com/draft/5687933/zumofn3qzg.jpg?imageView2/2/w/1620)
 
 ## HTTP 各种特性
 
@@ -158,18 +158,18 @@ bitpoetry.io/posts/hello.html#intro
 [更详细的CURL，点这里。](http://man.linuxde.net/curl)
 
 curl 访问 `baidu.com`:
-![](https://i.imgur.com/NizwtqN.png)
+![](https://ask.qcloudimg.com/draft/5687933/q9t3s1zy4e.png?imageView2/2/w/1620)
 
 返回的内容中，html部分只有一个meta标签，`<meta http-equiv="refresh" content="0;url=http://www.baidu.com/">`，这是因为我们访问的是`baidu.com`，在浏览器中，浏览器会自动解析这个meta标签并重定向到`http://www.baidu.com/`，然而命令行中并没有解析的功能。
 
 curl 访问 `www.baidu.com`:
-![](https://i.imgur.com/dAd9J4X.png)
+![](https://ask.qcloudimg.com/draft/5687933/leezb86um9.png?imageView2/2/w/1620)
 
 #### curl常用命令
 
 `-v` 显示详细的请求信息
 
-![](https://i.imgur.com/okOHC3s.png)
+![](https://ask.qcloudimg.com/draft/5687933/p8b75ogja6.png?imageView2/2/w/1620)
 
 `-X` 指定请求方式
 
@@ -241,7 +241,7 @@ console.log('server listening on 8887')
 </html>
 ```
 
-![](https://i.imgur.com/9zkYqTV.png)
+![](https://ask.qcloudimg.com/draft/5687933/w8py224vv6.png?imageView2/2/w/1620)
 
 处理方法：
 1.服务器端处理
@@ -273,12 +273,12 @@ response.writeHead(200, {
 </script>
 ```
 
-![](https://i.imgur.com/TdGoUJV.png)
+![](https://ask.qcloudimg.com/draft/5687933/urfx8wgb3p.png?imageView2/2/w/1620)
 
 我们设置的请求头中`X-Test-Cors`在跨域请求的时候，不被允许。
 
 虽然不允许跨域，但是请求仍然会发送，并返回成功。
-![](https://i.imgur.com/deoApDA.png)
+![](https://ask.qcloudimg.com/draft/5687933/47bskmhgx1.png?imageView2/2/w/1620)
 
 
 默认允许的请求方法：
@@ -305,7 +305,7 @@ response.writeHead(200, {
 })
 ```
 
-![](https://i.imgur.com/gCaBgsm.png)
+![](https://ask.qcloudimg.com/draft/5687933/54hpzn39h5.png?imageView2/2/w/1620)
 
 首先发送一个预请求，预请求就是告诉浏览器接下来要发送的post请求是被允许的。
 
@@ -336,7 +336,7 @@ response.writeHead(200, {
 ### 缓存Cache-Control
 
 常用值：
-![](https://i.imgur.com/mbdP7DC.png)
+![](https://ask.qcloudimg.com/draft/5687933/yniqagcbst.png?imageView2/2/w/1620)
 
 ```javascript
 // server.js
@@ -383,16 +383,16 @@ console.log('server listening on 8888')
 </html>
 ```
 
-![](https://i.imgur.com/gDDrIrc.png)
+![](https://ask.qcloudimg.com/draft/5687933/i3chymng79.png?imageView2/2/w/1620)
 
 刷新会发现`script.js`是从缓存中获取的，请求时间也是0。
-![](https://i.imgur.com/1ba21WT.png)
+![](https://ask.qcloudimg.com/draft/5687933/pr34duk1xc.png?imageView2/2/w/1620)
 
 > 我们希望浏览器缓存我们的图片，文件、js代码，但是服务器端代码更新了，浏览器端还是在缓存中获取的旧的文件。这就诞生了，webpack打包中出现的文件名后加上hash值，当文件改变时hash值也改变，这样浏览器就会发送新的请求到服务器端。
 
 #### 缓存验证
 
-![](https://i.imgur.com/4LpM5sO.png)
+![](https://ask.qcloudimg.com/draft/5687933/c66dehb1px.png?imageView2/2/w/1620)
 
 验证头：
 
@@ -433,11 +433,11 @@ http.createServer(function (request, response) {
 console.log('server listening on 8888')
 ```
 
-![](https://i.imgur.com/El7jbFA.png)
+![](https://ask.qcloudimg.com/draft/5687933/25w6d81y7t.png?imageView2/2/w/1620)
 
 > 302临时跳转，301永久跳转，301从缓存种获取跳转，使用301之后，主动权就掌握在用户手里，如果用户不清理缓存，那就算服务器端改变了也没用。
 
-![](https://i.imgur.com/jmiFHTk.png)
+![](https://ask.qcloudimg.com/draft/5687933/qpjo8n847l.png?imageView2/2/w/1620)
 
 ### Content Security Policy (网页安全政策)
 
@@ -445,7 +445,7 @@ console.log('server listening on 8888')
 
 ## HTTPS
 
-![](https://i.imgur.com/MMC47Gl.png)
+![](https://ask.qcloudimg.com/draft/5687933/voe2j2cq8c.png?imageView2/2/w/1620)
 
 HTTPS和HTTP的区别主要为以下四点：
 一、https协议需要到ca申请证书，一般免费证书很少，需要交费。
