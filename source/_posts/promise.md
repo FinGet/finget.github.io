@@ -54,8 +54,8 @@ new Promise((resolve, reject) => {
   console.log(value + 'world');
 });
 ```
-![](https://i.imgur.com/HOJQmbs.png)
-![](https://i.imgur.com/V4rR3Fs.png)
+![](https://ask.qcloudimg.com/draft/5687933/kqhttc08mg.png?imageView2/2/w/1620)
+![](https://ask.qcloudimg.com/draft/5687933/yjhi0xahxr.png?imageView2/2/w/1620)
 
 先输出1，间隔两秒输出了helloworld。
 
@@ -81,7 +81,7 @@ new Promise((resolve, reject) => {
 })
 ```
 间隔两秒，依次输出1 2 3
-![](https://i.imgur.com/hfUIOdS.png)
+![](https://ask.qcloudimg.com/draft/5687933/v9y98jtdse.png?imageView2/2/w/1620)
 
 ## 假如一个Promise 已经完成了，再.then()会怎样？？
 
@@ -102,7 +102,7 @@ setTimeout(() => {
 }, 3000);
 ```
 
-![](https://i.imgur.com/QqQAba9.png)
+![](https://ask.qcloudimg.com/draft/5687933/wa2mmfikho.png?imageView2/2/w/1620)
 
 >我们在任何一个地方，生成了一个`Promise`队列之后，我们可以声明一个变量，将它传递到其他地方，如果我们的操作是很明显的一个队列的状态(先进先出)，就可以在它后面追加任意多的`.then()`，不管他前面`Promise`状态是完成了还是没完成，队列都会安装固定的顺序去执行如果已完成，后面追加的`.then()`也会得到前面`Promise`返回的值。
 
@@ -132,7 +132,7 @@ new Promise((resolve, reject) => {
 })
 ```
 
-![](https://i.imgur.com/T7IP4ZL.png)
+![](https://ask.qcloudimg.com/draft/5687933/3r436e66v5.png?imageView2/2/w/1620)
 
 >`.then()`接受两个函数作为参数，分别代表`fulfilled`和`rejected`. `.then()`返回一个新的`Promise`实例，所以它可以链式调用状态响应函数可以返回新的`Promise`，或其他值如果返回新的`Promise`，那么下一级`.then()`会在新`Promise`状态改变之后执行,如果返回其他任何值，则会立刻执行下一级`.then()`
 
@@ -164,7 +164,7 @@ new Promise((resolve, reject) => {
 })
 ```
 
-![](https://i.imgur.com/kAwb2RI.png)
+![](https://ask.qcloudimg.com/draft/5687933/ni7iv0awtx.png?imageView2/2/w/1620)
 
 >因为`.then()`返回的还是`Promise`实例，所以会等到里面的`.then()`执行完，再执行外面的。
 
@@ -179,7 +179,7 @@ doSomething().then(function() {
 ```
 >假定doSomethingElse返回一个promise实例;图中横向代表执行先后顺序
 
-![](https://i.imgur.com/umARD97.png)
+![](https://ask.qcloudimg.com/draft/5687933/1rpcrb918r.png?imageView2/2/w/1620)
 ### 第二种 没有返回
 
 ```javascript
@@ -187,7 +187,7 @@ doSomething().then(function() {
   doSomethingElse();
 });
 ```
-![](https://i.imgur.com/y5UQu8O.png)
+![](https://ask.qcloudimg.com/draft/5687933/5z0f00fm8k.png?imageView2/2/w/1620)
 
 >第一个`.then()`没有return，虽然`doSomethingElse()`返回了一个`Promise`实例，但是这个`Promise`实例并没有返回给第一个`.then()`的响应函数，所以只能看作`doSomethingElse()`返回了一个`undefined`。
 
@@ -196,7 +196,7 @@ doSomething().then(function() {
 ```javascript
 doSomething().then(doSomethingElse());
 ```
-![](https://i.imgur.com/IiO1XAP.png)
+![](https://ask.qcloudimg.com/draft/5687933/6auf68y1wf.png?imageView2/2/w/1620)
 
 >在第一个`.then()`传入了`doSomethingElse()`，也就是传入了一个`Promise`实例
 在这种情况下，`doSomething`与`doSomethingElse`的执行时间是几乎一致的，因为`doSomethingElse`返回的是一个`Promise`实例，而不是一个函数，在`Promise`规范的定义当中，这个`.then()`会被忽略掉，所以它的完成时间是无关紧要的.
@@ -206,7 +206,7 @@ doSomething().then(doSomethingElse());
 ```javascript
 doSomething().then(doSomethingElse);
 ```
-![](https://i.imgur.com/FO98BHf.png)
+![](https://ask.qcloudimg.com/draft/5687933/9va4i9ir4d.png?imageView2/2/w/1620)
 
 >`.then()`接受两个参数，所以`doSomethingElse`则作为第一个`resolve`参数,并且`doSomethingElse`返回一个`Promise`实例
 
@@ -229,7 +229,7 @@ new Promise((resolve, reject) => {
 ```
 > `catch`也是返回一个Promise实例
 
-![](https://i.imgur.com/CsMkg1n.png)
+![](https://ask.qcloudimg.com/draft/5687933/imauvcvyyx.png?imageView2/2/w/1620)
 
 ### `reject`返回异常
 ```javascript
@@ -243,7 +243,7 @@ new Promise((resolve, reject) => {
   console.log('Err:'+ value)
 })
 ```
-![](https://i.imgur.com/3ytRP6q.png)
+![](https://ask.qcloudimg.com/draft/5687933/va8gmkxoo4.png?imageView2/2/w/1620)
 
 ## Promise进阶
 
@@ -299,7 +299,7 @@ Promise.all([1, 2, 3]).then(all => {
   console.log('Catch: ' + err);
 })
 ```
-![](https://i.imgur.com/4gEt1oQ.png)
+![](https://ask.qcloudimg.com/draft/5687933/uaoehnlbep.png?imageView2/2/w/1620)
 
 ### Promise.resolve()
 > 返回一个`fulfilled`的Promise实例，或者原始的Promise实例
@@ -330,7 +330,7 @@ Promise.resolve().then(() => {
 })
 ```
 
-![](https://i.imgur.com/WUhhEs8.png)
+![](https://ask.qcloudimg.com/draft/5687933/fth3syrpeu.png?imageView2/2/w/1620)
 
 ### Promise.race()
 

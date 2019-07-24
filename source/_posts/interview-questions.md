@@ -321,6 +321,60 @@ CSRF，全称为Cross-Site Request Forgery，跨站请求伪造，是一种网�
 
 > 当给父元素设置"overflow:hidden"时，实际上创建了一个超级属性BFC，此超级属性反过来决定了"height:auto"是如何计算的。在“BFC布局规则”中提到：计算BFC的高度时，浮动元素也参与计算。因此，父元素在计算其高度时，加入了浮动元素的高度，“顺便”达成了清除浮动的目标，所以父元素就包裹住了子元素。
 
+### 垂直居中的几种方式
+
+```css
+// 第一种
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+// 第二种
+.center {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+// 第三种
+.center {
+  position: absolute;
+  margin：auto；
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+// 第四种
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// 第五种
+.parent{
+  display: flex;
+}
+
+.content{
+  margin: auto; /*自动相对于父元素水平垂直居中*/
+}
+// 第六种
+.parent {
+    display: table;
+}
+
+.child {
+    display: table-cell;
+    vertical-align: middle;
+}
+```
+
 ### BFC是什么
 
 BFC(Block Formatting Context),块级格式化上下文,是Web页面中盒模型布局的CSS渲染模式。它的定位体系属于常规文档流。

@@ -249,7 +249,7 @@ barAO{
   foo: foo()
 }
 ```
-![](https://i.imgur.com/BOh1hJO.png)
+![](https://ask.qcloudimg.com/draft/5687933/hkjhvgthbd.png?imageView2/2/w/1620)
 
 foo函数中没有定义value，所以它会到它所在的上一层去找，并不会去bar里面找
 
@@ -271,7 +271,7 @@ bar();
 ```
 
 这样结果就是2了。
-![](https://i.imgur.com/JPpPtMu.png)
+![](https://ask.qcloudimg.com/draft/5687933/au4e6z82qg.png?imageView2/2/w/1620)
 
 在bar函数中不定义value，而是让它直接改变value的值，他自己没有定义，它也会去全局GO里面找，这样bar里面的value和全局中的value就是同一个内存中的数，当代码执行到`value=2`，再执行foo()时，全局中的value也是2，所以输出2。在第一种，情况中，`var value=2`只改变了barAO中的值。
 

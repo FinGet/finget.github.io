@@ -7,13 +7,13 @@ tags:
 categories: "webpack"
 description: "webpack学习笔记"
 ---
-![](https://i.imgur.com/NbPRvzp.png)
+![](https://ask.qcloudimg.com/draft/5687933/sqqa3q34m4.png?imageView2/2/w/1620)
 
 ## Webpack简介
 ### Webpack 概述
 >本质上，webpack 是一个现代 JavaScript 应用程序的静态模块打包器(module bundler)。当 webpack 处理应用程序时，它会递归地构建一个依赖关系图(dependency graph)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 bundle。
 
-![](https://i.imgur.com/hyxOIz4.png)
+![](https://ask.qcloudimg.com/draft/5687933/ecrt1u7m9h.png?imageView2/2/w/1620)
 [**Webpack官网**](https://webpack.js.org/)
 
 ### Webpack 的版本更迭
@@ -443,7 +443,7 @@ moduleA.js
 ```javascript
 export default 'moduleA'
 ```
-![](https://i.imgur.com/TzdtOpP.png)
+![](https://ask.qcloudimg.com/draft/5687933/6lctjrkhm0.png?imageView2/2/w/1620)
 
 ### 代码分割 和 懒加载
 >并不是通过配置webpack实现代码分割和懒加载，而是通过改变写代码的方式
@@ -521,7 +521,7 @@ moduleA.js
 ```javascript
 export default 'moduleA'
 ```
-![](https://i.imgur.com/f2BctzC.png)
+![](https://ask.qcloudimg.com/draft/5687933/11jb71d3u8.png?imageView2/2/w/1620)
 
 ##### 按条件加载模块
 
@@ -546,7 +546,7 @@ require.ensure([],function(){
 
 export default 'pageA';
 ```
-![](https://i.imgur.com/FLAp7V9.png)
+![](https://ask.qcloudimg.com/draft/5687933/9fmidzttwj.png?imageView2/2/w/1620)
 
 #### 动态import
 pageA.js
