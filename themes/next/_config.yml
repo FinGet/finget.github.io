@@ -178,7 +178,11 @@ toc:
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
 #creative_commons: by-nc-sa
-#creative_commons:
+creative_commons:
+  license: by-nc-sa
+  sidebar: false
+  post: true  # 将false改为true即可显示版权信息
+  language:
 
 sidebar:
   # Sidebar Position, available value: left | right (only for Pisces | Gemini).
@@ -202,7 +206,7 @@ sidebar:
   b2t: false
 
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
@@ -257,7 +261,7 @@ alipay: /images/alipay.jpg
 
 # Declare license on posts
 post_copyright:
-  enable: false
+  enable: true
   license: CC BY-NC-SA 3.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 

@@ -15,7 +15,7 @@ description: "重新理解一下原型与原型链"
 > 定义： 原型是function对象的一个属性，它定义了构造函数制造出的对象的公共祖先。通过该构造函数产生的对象，可以继承该原型的属性和方法。**原型也是对象。**
 
 用一张图简单解释一下定义。
-![](https://i.imgur.com/pCqIPWN.png)
+![](https://ask.qcloudimg.com/draft/5687933/3k0k7i4rhz.png?imageView2/2/w/1620)
 
 1. 每个函数上面都有一个原型属性(prototype)，这个属性会指向构造函数的原型对象(Person.prototype)
 2. 每个函数的原型对象(Person.protorype)默认都有一个constructor属性指向构造函数本身(Person)
@@ -46,7 +46,7 @@ console.log(person.constructor) // function Person() {}
 // person自己没有constructor,所以继承至原型
 ```
 Person.prototype:
-![](https://i.imgur.com/HA2kE3X.png)
+![](https://ask.qcloudimg.com/draft/5687933/267k65ie2r.png?imageView2/2/w/1620)
 
 > 图中浅紫色的都是自带的
 
@@ -72,7 +72,7 @@ var person = new Person()
 console.log(person.__proto__)
 ```
 
-![](https://i.imgur.com/CevHIfG.png)
+![](https://ask.qcloudimg.com/draft/5687933/p3okt5j17a.png?imageView2/2/w/1620)
 
 #### new
 
@@ -104,7 +104,7 @@ function Person() {
   }
 }
 ```
-![](https://i.imgur.com/wte5wno.png)
+![](https://ask.qcloudimg.com/draft/5687933/advy8xobez.png?imageView2/2/w/1620)
 
 > `person.__proto__` 与 `Person.prototype`是指向**同一个内存地址**，这也就是 为什么实例没有属性或方法会到原型上去查找
 
@@ -133,13 +133,13 @@ console.log(person.name) // ???
 ## 原型链
 
 先扔一张图：
-![](https://i.imgur.com/n00mTEp.png)
+![](https://ask.qcloudimg.com/draft/5687933/w1nlzshqlk.png?imageView2/2/w/1620)
 
 ```javascript
 Person.prototype.__proto__ : Object.prototype
 ```
 
-![](https://i.imgur.com/geOTuN7.png)
+![](https://ask.qcloudimg.com/draft/5687933/0n0cv2vsbn.png?imageView2/2/w/1620)
 
 例子：
 ```javascript
@@ -162,7 +162,7 @@ Son.prototype = father // Son的原型指向father
 var son = new Son()
 ```
 
-![](https://i.imgur.com/I7oOvUi.png)
+![](https://ask.qcloudimg.com/draft/5687933/fjc1lityg7.png?imageView2/2/w/1620)
 
 > 上图中红线表示的就是原型链了
 
@@ -178,7 +178,7 @@ function Person() {}
 var person = Object.create(Person.prototype)
 ```
 
-![](https://i.imgur.com/gYLt4y8.png)
+![](https://ask.qcloudimg.com/draft/5687933/prxib1ys0q.png?imageView2/2/w/1620)
 > `Object.create(null)`,null就是一个空对象，没有原型。这也是·typeof null == 'object'的原因
 
 ## toString
@@ -224,7 +224,7 @@ person.toString() // '重写toString'
 ```
 
 toString隐藏功能：判断变量、对象的类型
-![](https://i.imgur.com/wN3E3GW.png)
+![](https://ask.qcloudimg.com/draft/5687933/o9wjuz5a7g.png?imageView2/2/w/1620)
 
 ## call/apply
 
