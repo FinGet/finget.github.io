@@ -33,6 +33,11 @@
   <span id="busuanzi_container_site_uv">
     本站总访问量: <span id="busuanzi_value_site_pv"></span>次
   </span>
+  <span class="post-meta-divider">|</span>
+  <i class="fa fa-database"></i>
+  <span class="post-count">
+  博客全站共{{ totalcount(site) }}字
+  </span>
   </div>
   <!--<div class="powered-by">{#
   #}{{ __('footer.powered', '<a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a>') }}{#

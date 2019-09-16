@@ -95,7 +95,7 @@ menu:
   首页: / || home
   关于: /about/ || user
   标签: /tags/ || tags
-  类别: /categories/ || th
+  留言板: /guestbook/ || book
   归档: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -111,10 +111,10 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Muse
-scheme: Mist
-#scheme: Pisces
-#scheme: Gemini
+# scheme: Muse
+# scheme: Mist
+# scheme: Pisces
+scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -242,8 +242,8 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
+  wordcount: true
+  min2read: true
   totalcount: false
   separated_meta: true
 
@@ -814,6 +814,7 @@ vendors:
   # needMoreShare2
   # https://github.com/revir/need-more-share2
   needMoreShare2:
+
 
 
 # Assets

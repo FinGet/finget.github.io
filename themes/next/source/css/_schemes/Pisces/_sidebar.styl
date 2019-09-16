@@ -15,8 +15,11 @@
 //padding: 20px 10px 0;
   box-sizing: border-box;
   width: 240px;
-  color: $text-color;
-  background: white;
+  // color: $text-color;
+  color: #fff;
+  // background: white;
+  background-image: url(/images/sidebar.jpeg);
+  background-size: 100% 100%;
   box-shadow: $box-shadow;
   border-radius: $border-radius;
   if (hexo-config('motion.enable') and hexo-config('motion.transition.sidebar')) { opacity: 0; }
@@ -42,10 +45,19 @@
 }
 
 .sidebar a {
-  color: $black-light;
-
+  // color: $black-light;
+  color: #fff;
   &:hover { color: $black-deep; }
 }
+.sidebar .links-of-blogroll-item a{
+  width: 100%;
+  &:hover {
+    border-radius: 4px; background: #eee;
+  }
+}
+
+
+
 
 .site-state-item {
   padding: 0 10px;
