@@ -8,12 +8,14 @@ tags:
 categories: "JS"
 description: "什么是Ajax? 详解原生js封装ajax"
 ---
-什么是Ajax？（前后端数据交互）
+## 什么是Ajax？（前后端数据交互）
 Asynchronous JavaScript and XML（异步JavaScript和XML）
 
+### ajax的作用：
 a.节省用户操作时间，提高用户体验，减少数据请求
 b.传输、获取数据
-ajax流程：
+
+### ajax流程：
 ```javascript
 oBtn.onclick=function(){
   //第一步    ‘打开浏览器’    创建ajax对象
@@ -79,16 +81,17 @@ oBtn.onclick=function(){
     }
 }
 ```
-form表单:
+## form表单:
 action：数据提交地址，默认是当前页面
 method：数据提交方式，默认是get方式
 
-1.get 
+1. get 
 把数据名称和数据值用=连接，如果有多个的话，那么他会把多个数据组合用&进 行连接，然后把数据放到url?后面传到指定页面 url长度限制的原因，我们不要通过get方式传递过多的数据 
-2.post 理论上无限制 
+2. post 理论上无限制 
 enctype：提交的数据格式 ，默认是：application/x-www-form-unlencoded 
 application/x-www-form-urlencoded
-清除ajax缓存:
+
+### 清除ajax缓存:
 一、GET 方式请求
 
 如果两次请求的url相同的话 浏览器（不同缓存机制的浏览器会有所不同）会直接将第一次请求的结果给第二次请求
@@ -112,7 +115,7 @@ xhr.open(‘get’, ‘2.get.PHP?username=’ + encodeURI(‘刘伟’) + ‘&ag
  // encodeURL()处理中文乱码问题
 ```
 
-get方式提交数据
+### get方式提交数据
 ```html
 <!DOCTYPE HTML>
 <html>
@@ -171,7 +174,7 @@ window.onload = function() {
 </body>
 </html>
 ```
-post方式提交数据
+### post方式提交数据
 ```html
 <!DOCTYPE HTML>
 <html>
@@ -231,7 +234,7 @@ window.onload = function() {
 </body>
 </html>
 ```
-封装ajax.js
+## 封装ajax.js
 ```javascript
 function ajax(method, url, data, success) {
         var xhr = null;
@@ -289,7 +292,3 @@ jQuery(document).ready(function () {
     });
 });
 ```
-## 最后
-
-创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](<https://image-static.segmentfault.com/207/665/2076650181-5bfe3d1a48e89_articlex>)

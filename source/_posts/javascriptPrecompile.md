@@ -306,8 +306,3 @@ function fn(){
 
 >var a = b =100;
 先将100赋值给b，即b=100，此时b没有声明就被赋值。
-
-## 最后
-
-创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](<https://image-static.segmentfault.com/207/665/2076650181-5bfe3d1a48e89_articlex>)

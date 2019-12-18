@@ -381,9 +381,3 @@ export default class First extends Component{
 效果图：
 
 ![](https://i.imgur.com/YqJc1Ya.gif)
-
-
-## 最后
-
-创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](<https://image-static.segmentfault.com/207/665/2076650181-5bfe3d1a48e89_articlex>)

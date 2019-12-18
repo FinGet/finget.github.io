@@ -762,11 +762,3 @@ router.get('/cartLists', async (ctx) => {
 
 创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！源码中没有放商品的数据库文件，加群可以获得一份，也可以自己根据数据结构去创建数据。
 
-
-
-qq交流群：
-![qq群](http://ww1.sinaimg.cn/large/006tNc79gy1g5pyl51d8ej305k05lab8.jpg)
-
-
-微信交流群：
-![微信群](http://ww4.sinaimg.cn/large/006tNc79gy1g5pyk4z92jj305k05hwfa.jpg)

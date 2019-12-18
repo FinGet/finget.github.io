@@ -170,8 +170,3 @@ function oddEvenSort(arr) {
 var arr = [2, 3, 6, 4, 2, 1, 90, 100, 20, 5];
 console.log(oddEvenSort(arr)); // [1, 2, 3, 4, 5, 6, 20, 90, 100]
 ```
-
-## 最后
-
-创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](<https://image-static.segmentfault.com/207/665/2076650181-5bfe3d1a48e89_articlex>)

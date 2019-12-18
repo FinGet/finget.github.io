@@ -187,8 +187,3 @@ person.constructor === Person.prototype.constructor
 继承意味着复制操作，然而 JavaScript 默认并不会复制对象的属性，相反，JavaScript 只是在两个对象之间创建一个关联，这样，一个对象就可以通过委托访问另一个对象的属性和函数，所以与其叫继承，**委托**的说法反而更准确些。
 
 > 推荐阅读:[阮一峰Javascript继承机制的设计思想](http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html) 
-
-## 最后
-
-创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](<https://image-static.segmentfault.com/207/665/2076650181-5bfe3d1a48e89_articlex>)

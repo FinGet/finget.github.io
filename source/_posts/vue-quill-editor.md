@@ -412,10 +412,5 @@ export default {
 }
 ```
 
-## 最后
 
-创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](https://image-static.segmentfault.com/207/665/2076650181-5bfe3d1a48e89)
-
-我的博客即将同步至腾讯云+社区，邀请大家[一同入驻](https://cloud.tencent.com/developer/support-plan?invite_code=ujxzmialts29)：https://cloud.tencent.com/developer/support-plan?invite_code=ujxzmialts29
 

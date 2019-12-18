@@ -148,8 +148,3 @@ a.fn()相当于在全局定义了一个函数，然后再自己调用执行。th
 6.`console.log(a.fn().call(a));`
 this -> a
 `# 15`
-
-## 最后
-
-创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](<https://image-static.segmentfault.com/207/665/2076650181-5bfe3d1a48e89_articlex>)

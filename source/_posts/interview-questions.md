@@ -1859,9 +1859,3 @@ this.setState((prevState, props) => {
 8. [八段代码彻底掌握Promise](https://juejin.im/post/597724c26fb9a06bb75260e8)
 9. [通俗大白话来理解TCP协议的三次握手和四次分手](https://segmentfault.com/a/1190000009183220)
 10. [js深入底层系列](https://github.com/FinGet/Blog-1)
-
-
-## 最后
-
-创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](<https://image-static.segmentfault.com/207/665/2076650181-5bfe3d1a48e89_articlex>)

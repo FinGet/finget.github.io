@@ -75,7 +75,7 @@ function DN(name, age) {
   this.salary = '30k';
   return {
   	name: name,
-	salary: "30k"
+	  salary: "30k"
   }
 }
 DN.prototype.ability = 100;
@@ -83,7 +83,7 @@ DN.prototype.sayYourName = function(){
   console.log('I am' + this.name);
 }
 var person = new DN('张三', '18');
-console.log(person.name); // undefined
+console.log(person.name); // 张三
 console.log(person.age); // undefined
 person.sayYourName(); // error
 ```
@@ -220,8 +220,3 @@ function DNew() {
   return DN;
 })
 ```
-
-## 最后
-
-创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](<https://image-static.segmentfault.com/207/665/2076650181-5bfe3d1a48e89_articlex>)

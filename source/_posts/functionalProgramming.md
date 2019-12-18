@@ -15,8 +15,3 @@ description: "通过JavaScript初步了解函数式编程"
 
 ## 在那些地方用到了？
 >随着React、vue的火热，函数式编程的概念也开始流行起来，多种前端状态管理框架Flux redux Vuex早期的underscore RxJS库都使用了函数式的特性。
-
-## 最后
-
-创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](<https://image-static.segmentfault.com/207/665/2076650181-5bfe3d1a48e89_articlex>)

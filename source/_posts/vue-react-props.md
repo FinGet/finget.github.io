@@ -241,7 +241,3 @@ export default Child;
 1. React 的子组件中不用定义父组件传值对应的变量
 2. React 的子组件不用派发事件，父组件可以直接传递方法
 3. 子组件通过`this.props.click` 可以调用父组件传递的方法，并传参
-## 最后
-
-创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](<https://image-static.segmentfault.com/207/665/2076650181-5bfe3d1a48e89_articlex>)

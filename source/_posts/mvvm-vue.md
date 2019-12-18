@@ -376,8 +376,3 @@ with(this){  // this 就是 vm
 ![](https://ask.qcloudimg.com/draft/5687933/e7fqueqc7u.png?imageView2/2/w/1620)
 
 - 第四步： data 属性变化，触发 rerender
-
-## 最后
-
-创建了一个前端学习交流群，感兴趣的朋友，一起来嗨呀！
-![](<https://image-static.segmentfault.com/207/665/2076650181-5bfe3d1a48e89_articlex>)
