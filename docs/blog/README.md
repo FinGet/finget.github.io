@@ -6,11 +6,17 @@
 
 [深入理解浮动](./css/float)
 
+[垂直居中的6种方式](./css/vertical-center)
+
 ## JavaScript
 
 [JavaScript原生ajax](./js/ajax)
 
 [原生JavaScript实现extend](./js/extend)
+
+[手写call,apply,bind](./js/bind-apply-call)
+
+[手写节流和防抖](./js/throttle-debounce)
 
 [ES6常用功能](./js/javascript-es6)
 

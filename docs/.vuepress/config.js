@@ -35,7 +35,8 @@ module.exports = {
           children: [
             '/blog/css/box-model', // 以docs为根目录来查找文件 
             '/blog/css/border1px',
-            '/blog/css/float'
+            '/blog/css/float',
+            '/blog/css/vertical-center'
           ]
         },
         {
@@ -43,6 +44,8 @@ module.exports = {
           children: [
             '/blog/js/ajax',
             '/blog/js/extend',
+            '/blog/js/bind-apply-call',
+            '/blog/js/throttle-debounce',
             '/blog/js/javascript-es6',
             '/blog/js/promise',
             '/blog/js/new',
